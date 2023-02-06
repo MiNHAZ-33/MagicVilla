@@ -15,6 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 
 builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddScoped<IVillaRespository, VillaRepository>();
+builder.Services.AddScoped<IVillaNumberRespository, VillaNumberRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
