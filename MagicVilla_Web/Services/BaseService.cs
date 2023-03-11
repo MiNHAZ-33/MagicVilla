@@ -24,7 +24,7 @@ namespace MagicVilla_Web.Services
             {
                 var client = httpClient.CreateClient("MagicAPI");
                 HttpRequestMessage messsage = new HttpRequestMessage();
-                messsage.Headers.Add("Content-Type", "application/json");
+                messsage.Headers.Add("Accept", "application/json");
                 messsage.RequestUri = new Uri(apiRequest.Url);
 
                 if (apiRequest.Data != null)
